@@ -300,6 +300,7 @@ function PrintJobHistoryEditDialog(){
 
         self.editPrintJobItemDialog.modal({
             //minHeight: function() { return Math.max($.fn.modal.defaults.maxHeight() - 80, 250); }
+            maxHeight: Math.max(0, ($(window).height() - 300) + 'px'),
             keyboard: false,
             clickClose: false,
             showClose: false,
